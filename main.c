@@ -204,7 +204,7 @@ int main() {
     SetThreadContext(pi.hThread, &ctx);
 
     printf("Resumming thread...");
-    ResumeThread(pi.hThread); //this is killing the calc.exe process istead of resumming it
+    ResumeThread(pi.hThread); //error
 
     HeapFree(GetProcessHeap(), 0, FileToRunBuffer);
     return 0;
